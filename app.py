@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 # Upload Folder Blob Storage Define
 account_name = 'imagetemp'
-account_key = 'NST49jJkYBZd3eaotn+FG+CzcHuX9dtmZ68sd7WdY2n3ToC0A+yaO04Syl3ZuyEqCJUZ/9efVjwl+AStJ6yGtw=='
+account_key = 'azure__storage__account__KEY'
 container_name = 'temp-image'
 
 blob_service_client = BlobServiceClient(account_url=f"https://{account_name}.blob.core.windows.net", credential=account_key)
@@ -70,7 +70,7 @@ def pred2(mod2, img):
     confidence = round(100 * (np.max(pred[0])), 2)
     return pred_class, confidence
 
-api_key = 'cdd0844844e8458283990e59d06d2043'
+api_key = 'spoonacular__API__Key'
 base_url = 'https://api.spoonacular.com/'
 
 ingredients = []
