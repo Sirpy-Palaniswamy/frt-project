@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: auto; 
+            display:grid
+        }
+        .boton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: auto; 
+        }
+        .file-input-container {
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .file-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 100px;
+            opacity: 0;
+        }
+        input[type="image"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Upload Your Image</h1>
+    </header>
+    <form method="POST" enctype="multipart/form-data" action="/display">    
+        <div class="container" style="display: grid;">
+            <label for="file" class="file-input-container">
+                <input type="file" name="images" accept="image/*" class="file-input" multiple>
+                Choose
+            </label>
+            <br>
+            <input type="submit" value="Upload" class="boton">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Ignore virtual environment
+myenv/
+
+# Exclude local development settings (e.g., .env)
+.env
+
+# Exclude temporary and cache files
+__pycache__/
+*.pyc
+.pyo
+
+# Exclude log files and other generated files
+logs/
+instance/

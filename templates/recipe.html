@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Results</h1>
+    </header>
+    <div class="container">
+        <div class="results">
+            <ul>
+                {% for recipe in recipes %}
+                <li>
+                    <h2 style="text-align: center;">{{ recipe.title }}</h2>
+                    <p style="font-weight: bold;">Missing Ingredients Count: {{ recipe.missedIngredientCount }}</p>
+                    <p style="font-weight: bold;">Missed Ingredients:</p>
+                    <ul>
+                        {% for ingredient in recipe.missedIngredients %}
+                        <li>{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p style="font-weight: bold;">Used Ingredients:</p>
+                    <ul>
+                        {% for meow in recipe.usedIngredients %}
+                        <li>{{ meow }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+        {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

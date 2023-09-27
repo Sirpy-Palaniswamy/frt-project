@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .containerimg {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 5px;
+            background-color: #c7c7c7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: auto; 
+            display:grid
+        }
+        .boton {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: auto; 
+            display:grid
+        }
+        input[type="image"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Predict</h1>
+    </header>
+    <div class="container">
+        {% for image_path in image_paths %}
+            <img src="{{ image_path }}" alt="img_upload" class="containerimg" style="height: 250px; width: 250px">   
+        {% endfor %}
+    </div>
+    <div class="container">
+        {% for item in predictions %}
+            <h2>Predictions for Image {{ loop.index }}</h2>
+            <ul>
+                    <li>{{ item[0] }}</li>
+            </ul>
+        {% endfor %}
+        <form method="GET" enctype="multipart/form-data" action="/results">
+            <input type="submit" value="Check Recipes" class="boton">
+        </form>
+</body>
+</html>
