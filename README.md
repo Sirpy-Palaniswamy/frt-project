@@ -51,7 +51,11 @@ This web application is designed to simplify the process of identifying ingredie
 <hr>
 <h2>Screen Shots</h2>
 <h4>Azure Storage Service</h4>
-![alt text](https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Containers.png)
+<img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Containers.png" />
+<img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Model_Container.png"/>
+<img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Image_Container.png"/>
+<h4>Azure App Services</h4>
+<img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Azure_App_Service.png">
 <h2>References:</h2>
 <ul>
   <li>https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients</li>
