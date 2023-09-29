@@ -2,26 +2,6 @@
 <h2>Overview</h2>
 This web application is designed to simplify the process of identifying ingredients in images and provide recipe recommendations based on those ingredients. It's built using the Flask web framework in Python and integrates with the Spoonacular API to offer a comprehensive cooking and meal planning experience.
 <hr>
-<h2>Tech Stack</h2>
-<ul>
-    <h3><bold>1. Softwares Used</bold></h3>
-  <ul>
-    <li>Visual Studio Code</li>
-    <li>Azure CLI</li>
-    <li>Azure Services</li>
-    <li>GitHub</li>
-    <li>Git-Scm</li>
-  </ul>
-  <h3><bold>2. Frameworks Used</bold></h3>
-  <ul>
-    <li>Python - 3.8.x</li>
-    <li>Flask</li>
-    <li>Tensorflow - 2.13.0</li>
-    <li>Numpy</li>
-    <li>HTML / CSS</li>
-  </ul>
-</ul>
-<hr>
 <h2>Key Features</h2>
 <ul>
   <li><h3>Ingredient Recognition</h3>The application uses two machine learning models trained on datasets sourced from kaggle. These models are trained and excelled in recognizing various fruits and vegetables from the given image</li>
@@ -41,6 +21,15 @@ This web application is designed to simplify the process of identifying ingredie
   <li>With the name of the recipe, the user is able to search online to find out the cooking method for the same.</li>
 </ul>
 <hr>
+<h2>Dependencies</h2>
+This application relies on several key dependencies, including:
+<ul>
+    <li>Flask: The web framework used for building the application.</li>
+    <li>TensorFlow: For running machine learning models.</li>
+    <li>Pillow: For image processing and handling.</li>
+    <li>Azure Blob Storage SDK: If Azure Blob Storage is used for image storage.</li>
+</ul>
+Please refer to the requirements.txt file for a complete list of dependencies and versions.
 <h2>Future Scope:</h2>
 <ul>
   <li>The project as of now is able to only able to predict images of single ingredient, further scope includes the multi segement image classification to classify the image of a cluster of ingredients</li>
@@ -51,14 +40,28 @@ This web application is designed to simplify the process of identifying ingredie
 <hr>
 <h2>Screen Shots</h2>
 <h3>Azure Storage Service</h3>
+<h4>Used Containers List</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Containers.png" />
+<h4>Container 1 (For Model Storage)</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Model_Container.png"/>
+<h4>Container 2 (For Image Storage)</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Image_Container.png"/>
 <h3>Azure App Services</h3>
+<h4>Azure Deployed Page</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Azure_App_Service.png">
+<h3>Model Summary</h3>
+<h4>Model 1</h4>
+<a href="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/vegetable_model.png">MODEL 1, click to view</a>
+<h4>Model 2</h4>
+<a href="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/fruits_model.png">MODEL 2, click to view</a>
 <h2>References:</h2>
 <ul>
   <li>https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients</li>
   <li>https://www.kaggle.com/datasets/sshikamaru/fruit-recognition</li>
   <li>https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition</li>
 </ul>
+<h2>Author</h2>
+<h3>
+    [Sirpy Palaniswamy]
+    GitHub: [https://github.com/Sirpy-Palaniswamy]
+</h3>
