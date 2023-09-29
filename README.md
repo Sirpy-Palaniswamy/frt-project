@@ -30,6 +30,7 @@ This application relies on several key dependencies, including:
     <li>Azure Blob Storage SDK: If Azure Blob Storage is used for image storage.</li>
 </ul>
 Please refer to the requirements.txt file for a complete list of dependencies and versions.
+<hr>
 <h2>Future Scope:</h2>
 <ul>
   <li>The application is only done as a MVP product, so the plan to develop more user interface will be done with the help of user experience comments in the future.</li>
