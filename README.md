@@ -63,5 +63,6 @@ Please refer to the requirements.txt file for a complete list of dependencies an
 <h2>Author</h2>
 <h3>
     [Sirpy Palaniswamy]
+<br>
     GitHub: [https://github.com/Sirpy-Palaniswamy]
 </h3>
