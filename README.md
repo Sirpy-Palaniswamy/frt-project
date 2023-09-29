@@ -50,11 +50,11 @@ This web application is designed to simplify the process of identifying ingredie
 </ul>
 <hr>
 <h2>Screen Shots</h2>
-<h4>Azure Storage Service</h4>
+<h3>Azure Storage Service</h3>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Containers.png" />
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Model_Container.png"/>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Image_Container.png"/>
-<h4>Azure App Services</h4>
+<h3>Azure App Services</h3>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Azure_App_Service.png">
 <h2>References:</h2>
 <ul>
