@@ -1,6 +1,6 @@
 <h1>Recipe Generator</h1>
 <h2>Overview</h2>
-This web application is designed to simplify the process of identifying ingredients in images and provide recipe recommendations based on those ingredients. It's built using the Flask web framework in Python and integrates with the Spoonacular API to offer a comprehensive cooking and meal planning experience.
+This web application is designed to simplify the process of identifying ingredients in images and provide recipe recommendations based on those ingredients. It's built using the Flask web framework in Python and integrates with the Spoonacular API to offer a comprehensive cooking and meal planning experience. Currently the application is only at the skeleton state, further development on the user experience will be done with more given time in the future. The application is currently a MVP application only.
 <hr>
 <h2>Key Features</h2>
 <ul>
@@ -32,6 +32,7 @@ This application relies on several key dependencies, including:
 Please refer to the requirements.txt file for a complete list of dependencies and versions.
 <h2>Future Scope:</h2>
 <ul>
+  <li>The application is only done as a MVP product, so the plan to develop more user interface will be done with the help of user experience comments in the future.</li>
   <li>The project as of now is able to only able to predict images of single ingredient, further scope includes the multi segement image classification to classify the image of a cluster of ingredients</li>
   <li>The trained models are for common vegetables and fruits available to the general, further improvement on more region specifc ingrredients such as cassava, various types of meat, etc,.</li>
   <li>The results as of now only display recipe names, maybe in future, we can define a model to generate recipe based on the recipe given to it.</li>
@@ -47,7 +48,7 @@ Please refer to the requirements.txt file for a complete list of dependencies an
 <h4>Container 2 (For Image Storage)</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Storage_Image_Container.png"/>
 <h3>Azure App Services</h3>
-<h4>Azure Deployed Page</h4>
+<h4>Azure App Deployed Page</h4>
 <img src="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/Azure_App_Service.png">
 <h3>Model Summary</h3>
 <h4>Model 1</h4>
@@ -62,7 +63,8 @@ Please refer to the requirements.txt file for a complete list of dependencies an
 </ul>
 <h2>Author</h2>
 <h3>
-    [Sirpy Palaniswamy]
-<br>
+    Sirpy Palaniswamy
+</h3>
+<h3>
     GitHub: [https://github.com/Sirpy-Palaniswamy]
 </h3>
