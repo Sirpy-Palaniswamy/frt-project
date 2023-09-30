@@ -4,7 +4,7 @@ This web application is designed to simplify the process of identifying ingredie
 <hr>
 <h2>Key Features</h2>
 <ul>
-  <li><h3>Ingredient Recognition</h3>The application uses two machine learning models trained on datasets sourced from kaggle. These models are trained and excelled in recognizing various fruits and vegetables from the given image</li>
+  <li><h3>Ingredient Recognition</h3>The application uses a machine learning model trained on datasets sourced from kaggle. The model is trained and excelled in recognizing various fruits and vegetables from the given image</li>
   <li><h3>API Integration</h3>Using the Spoonacular API available to the public, we integrate the <i><bold>findByIngredients</bold></i> api call. With the predictions made by the model from the images, the list of ingredients is sent over to the API, the response is then gathered from the call made and displayed onto the application. Spoonacular API also has the feature of returning the <i>"missedIngredients"</i> and <i>"usedIngredients"</i> from the recipes displayed, which helps the user to understand what is required for the recipe and what's not.</li>
   <li><h3>User Interface</h3>The application runs on a minimal design for now, with the ability of the user to upload all the images of the ingredients he has at hand to the application. After prediction, the user is able to view the possible recipes on the application with the details of the recipe ingredients required possibly if missing any.</li>
 </ul>
@@ -54,8 +54,6 @@ Please refer to the requirements.txt file for a complete list of dependencies an
 <h3>Model Summary</h3>
 <h4>Model 1</h4>
 <a href="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/vegetable_model.png">MODEL 1, click to view</a>
-<h4>Model 2</h4>
-<a href="https://github.com/Sirpy-Palaniswamy/frt-project/blob/main/screenshots/fruits_model.png">MODEL 2, click to view</a>
 <h2>References:</h2>
 <ul>
   <li>https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients</li>
