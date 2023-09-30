@@ -11,7 +11,7 @@ This web application is designed to simplify the process of identifying ingredie
 <hr>
 <h2>Working</h2>
 <ul>
-  <li>Two models, one for fruits and another for vegetables was custom trained on the dataset sourced from kaggle. The models were then saved on to the Azure Storage for the application to access the model during the period of predicition analysis</li>
+  <li>The model, for fruits and for vegetables classification was custom trained on the dataset sourced from kaggle. The model was then saved on to the Azure Storage for the application to access the model during the period of classification analysis</li>
   <li>Next, a flask application was developed using Visual Studio Code and the Python 3.8.x interpreter.</li>
   <li>The Spoonacular API was then integrated along with the Azure Storage Client Integration with the application.</li>
   <li>The first page is the display of the feature of uploading the user's image on to the application, the user selects multiple various ingredients onto the application. The application then sends these images to the Azure Storage for access during the prediction analysis period.</li>
