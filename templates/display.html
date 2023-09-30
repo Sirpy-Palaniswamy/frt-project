@@ -69,16 +69,20 @@
         {% for image_path in image_paths %}
             <img src="{{ image_path }}" alt="img_upload" class="containerimg" style="height: 250px; width: 250px">   
         {% endfor %}
+        <form method="GET" enctype="multipart/form-data" action="/home">
+            <input type="submit" value="Re-Submit" class="boton">
+        </form>
     </div>
     <div class="container">
         {% for item in predictions %}
             <h2>Predictions for Image {{ loop.index }}</h2>
             <ul>
-                    <li>{{ item[0] }}</li>
+                <li>{{ item[0] }}</li>
             </ul>
         {% endfor %}
         <form method="GET" enctype="multipart/form-data" action="/results">
             <input type="submit" value="Check Recipes" class="boton">
         </form>
+    </div>
 </body>
 </html>
